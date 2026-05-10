@@ -4,11 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 | Dynamic Web Fundamentals | Karissa Holt</title>
+    <meta name="description"
+        content="WDD 131 | Dynamic Web Fundamentals home page for Karissa Holt with an About Me section, Utah information, web development resources, and course links.">
+    <meta name="author" content="Karissa Holt">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-    <h1>WDD 131 - Karissa Holt</h1>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <ul class="navigation">
+                <li><a href="www.linkedin.com/in/karissa-holt-1b0ab2401" title="LinkedIn">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" title="Canvas">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/56?lang=eng&id=p47-p48#p47"
+                        title="Scripture">Scripture</a></li>
+                <li><a href="#" title="Final Project">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Karissa Holt</h1>
+        <section class="card about-me">
+            <h2>About Me</h2>
+            <div class="about-top">
+                <p>My name is Karissa but I go by Kari. I was born in Utah and I still live in Utah. I am currently
+                    working as an administrative assistant for Deseret Industries. My husband and I adopted our 4
+                    amazing kids. I love spending time with my family, traveling, camping, and riding 4-wheelers.</p>
+                <img src="images/karissa-holt.JPG" alt="Picture of Karissa Holt">
+            </div>
+            <h3>Salina, Utah</h3>
+            <div class="about-bottom">
+                <figure>
+                    <img src="images/utah-flag.jpg" alt="Picture of Utah Flag">
+                    <figcaption>Official Flag of Utah</figcaption>
+                </figure>
+                <p>
+                    Utah is known for its incredible natural beauty and outdoor adventures. It is home to 5 national
+                    parks, with the famous red rock landscapes and towering cliffs. It is also home to snowy mountains
+                    which make it popular for skiing and snowboarding. Many people enjoy hiking, camping, rafting and
+                    just exploring the unique landscapes Utah offers.
+                </p>
+            </div>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul class="web-resources">
+                <li><a href="#">Dev.to Community</a></li>
+                <li><a href="#">Smashing Magazine</a></li>
+                <li><a href="#">CSS Tricks</a></li>
+                <li><a href="#">CSS W3 Schools</a></li>
+                <li><a href="#">Udemy</a></li>
+                <li><a href="#">Lorem Picsum Image Placeholder</a></li>
+            </ul>
+            <img src="" alt="">
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🌸 Karissa Holt 🌸 Utah</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
