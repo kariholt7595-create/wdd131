@@ -155,6 +155,6 @@ footer p {
     margin: 0;
 }
 
-footer p: :first-child {
+footer p:first-child {
     margin-bottom: .5rem
 }
