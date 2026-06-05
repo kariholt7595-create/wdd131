@@ -5,15 +5,25 @@ main {
   padding: 2rem 1rem;
 }
 
-h1{
-    color: #0f2d52;
+header, footer {
+    text-align: center;
+    background-color: #0f2d52;
+    color: white;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
 }
 
 .card {
   background-color: white;
   border: 1px solid #d6dee3;
   border-radius: 12px;
-  padding: 2rem;
+  padding: 1rem;
   margin-bottom: 2rem;
 }
 
@@ -37,7 +47,7 @@ h1{
 .color-card {
     border: 1px solid #d6dee3;
     border-radius: 12px;
-    padding: 2rem;
+    padding: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -66,7 +76,7 @@ h1{
 .font-card {
     border: 1px solid #d6dee3;
     border-radius: 12px;
-    padding: 2rem;
+    padding: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -102,11 +112,9 @@ h1{
     border-radius: 10px;
     padding: 1rem;
     margin-bottom: 1rem;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     font-weight: bold;
 }
 
