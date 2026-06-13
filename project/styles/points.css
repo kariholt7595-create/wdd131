@@ -1,0 +1,315 @@
+/* ---------- CSS Variables ---------- */
+
+:root {
+    --primary-color: #0F2D52;
+    --secondary-color: #2d5e59;
+    --accent-color: #D8B35A;
+    --background-color: #F7F8F6;
+    --light-accent: #A8C2B7;
+
+    --heading-font: 'Poppins', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+/* ---------- Reset ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- Global Styles ---------- */
+
+body {
+    font-family: "Roboto", arial, sans-serif;
+    background-color: var(--background-color);
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+h1, h2, h3 .logo,
+nav a {
+    font-family: "Poppins", Arial, sans-serif;
+    color: var(--primary-color);
+    
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    gap: .75rem;
+    border-bottom: 4px solid var(--secondary-color);
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+
+.branding img {
+    width: 75px;
+    background-color: white;
+    padding: .35rem;
+    border-radius: 10px;
+}
+
+.branding h1 {
+    font-size: 1.3rem;
+    line-height: 1.2;
+    color: white;
+}
+
+#menu-button {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+nav {
+    display: none;
+    grid-column: 1 / 3;
+    text-align: center;
+}
+
+nav.open {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    margin-top: 1rem;
+    grid-column: 1 / 3;
+}
+
+nav a {
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+.hero img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.cards {
+    display: grid;
+    gap: 1rem;
+    margin: 2rem 1rem;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    border-top: 5px solid var(--secondary-color);
+    box-shadow: 0 3px 10px rgba(0,0,0,.1);
+}
+
+.card-icon {
+    font-size: 3rem;
+    color: var(--secondary-color);
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.card h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+.comparison {
+    margin: 2rem 1rem;
+}
+
+.comparison h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.comparison-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,.1);
+}
+
+.comparison-table div {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.comparison-header {
+    background-color: #0F2D52;
+    color: white;
+    font-weight: 700;
+}
+
+.resources {
+    margin: 2rem 1rem;
+}
+
+.resource-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,.1);
+}
+
+.resource-card a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.calculator {
+    margin: 2rem 1rem;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.1);
+    border-top: 5px solid var(--secondary-color);
+}
+
+.calculator h2 {
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.calculator p {
+    margin-bottom: 1rem;
+}
+
+#points-calculator {
+    display: grid;
+    gap: .75rem;
+}
+
+#points-calculator label {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+#points-calculator input {
+    padding: .6rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+#points-calculator button {
+    padding: .75rem;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#points-calculator input,
+#points-calculator button {
+    width: 100%;
+}
+
+#points-calculator button:hover {
+    background-color: var(--accent-color);
+}
+
+#calculator-results {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: var(--light-accent);
+    border-left: 6px solid var(--accent-color);
+    border-radius: 8px;
+    color: var(--primary-color);
+}
+
+#calculator-results h3 {
+    margin-bottom: .5rem;
+}
+
+.tips {
+    margin: 2rem 1rem;
+}
+
+.tips h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.tips-container {
+    background-color: var(--light-accent);
+    color: var(--primary-color);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-left: 8px solid var(--accent-color);
+}
+
+.tips-container h3 {
+    margin-bottom: .5rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-top: 4px solid var(--secondary-color);
+}
+
+footer p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--background-color);
+    font-weight: 400;
+}
+
+footer a:hover {
+    color: var(--accent-color);
+}
+
+#lastModified {
+    color: white;
+    font-size: 0.85rem;
+}

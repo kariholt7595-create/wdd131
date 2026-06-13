@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Karissa Holt">
+    <meta name="description" content="Learn how to earn and use reward points for travel through credit cards, shopping rewards, and loyalty programs. ">
+    <title>Points Playground</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="styles/points.css">
+    <link rel="stylesheet" href="styles/points-large.css">
+    <script src="scripts/points.js" defer></script>
+</head>
+<body>
+   <header>
+        <div class="branding">
+        <img src="images/points-playground-logo.jpg" alt="Credit card going down a slide with airplane in background">
+        <h1>Points Playground</h1>
+        </div>
+
+        <button id="menu-button" aria-label="Open navigation menu">
+            &#9776;
+        </button>
+
+        <nav>
+        <a href="index.html">Earning Points</a>
+        <a href="flights.html">Flights</a>
+        <a href="hotels.html">Hotels</a>
+        <a href="resources.html">Resources</a>
+        </nav>
+    </header>
+<main>
+    <section class="hero">
+        <img src="images/points-playground-hero.webp" alt="Woman holding credit card and has a computer" loading="lazy">
+        <h2>Start Earning Reward Points</h2>
+        <p>Learn how everyday spending can help you earn points for travel.</p>
+    </section>
+
+    <section class="intro">
+        <h2>What Are Reward Points?</h2>
+        <p>Reward points are earned through credit cards, shopping, and loyalty programs.</p>
+    </section>
+
+    <section class="cards">
+
+    <div class="card">
+        <span class="material-symbols-outlined card-icon">
+            credit_card
+        </span>
+
+        <h3>Credit Cards</h3>
+
+        <p>Travel rewards credit cards are one of the fastest ways to earn points.
+        Many cards offer welcome bonuses and earn points on everyday purchases
+        like groceries, gas, and dining.</p>
+    </div>
+
+    <div class="card">
+        <span class="material-symbols-outlined card-icon">
+            shopping_bag
+        </span>
+
+        <h3>Shopping Rewards</h3>
+
+        <p>Online shopping portals allow you to earn extra points when purchasing
+        from stores you already use. These rewards can stack with credit card
+        earnings to increase your total points.</p>
+    </div>
+
+    <div class="card">
+        <span class="material-symbols-outlined card-icon">
+            flight
+        </span>
+
+        <h3>Loyalty Programs</h3>
+
+        <p>Airline, hotel, and store loyalty programs help you earn points over time.
+        Many are free to join and can lead to future travel rewards, discounts,
+        or member perks.</p>
+    </div>
+
+</section>
+
+    <section class="comparison">
+    <h2>Cashback vs. Reward Points</h2>
+
+    <div class="comparison-table">
+
+        <div class="comparison-header">Feature</div>
+        <div class="comparison-header">Cashback</div>
+        <div class="comparison-header">Reward Points</div>
+
+        <div>Value</div>
+        <div>Fixed cash value</div>
+        <div>Can vary depending on redemption</div>
+
+        <div>Ease of Use</div>
+        <div>Very simple</div>
+        <div>Requires some learning</div>
+
+        <div>Best For</div>
+        <div>Everyday savings</div>
+        <div>Travel rewards</div>
+
+        <div>Flexibility</div>
+        <div>Cash or statement credits</div>
+        <div>Flights, hotels, and transfers</div>
+    </div>
+</section>
+
+<section class="calculator">
+    <h2>Points vs. Cash Back Calculator</h2>
+    <p>Compare the cash back value of points with the value of using points for travel.</p>
+
+    <form id="points-calculator">
+        <label for="cash-price">Cash Price of Flight or Hotel</label>
+        <input type="number" id="cash-price" name="cash-price" min="1" required>
+
+        <label for="points-needed">Points Needed</label>
+        <input type="number" id="points-needed" name="points-needed" min="1" required>
+
+        <button type="submit">Compare Value</button>
+    </form>
+
+    <div id="calculator-results"></div>
+</section>
+
+    <section class="tips">
+    <h2>Beginner Tip</h2>
+<div class="tips-container">
+
+    <h3>💡 Did You Know?</h3>
+
+    <p>
+        Many travel credit cards allow points to be redeemed through their
+        travel portal. While this option is convenient, it may not always
+        provide the best value. In some cases, transferring points to airline
+        or hotel partners can stretch your points further and reduce the
+        number of points needed for the same trip.
+    </p>
+
+</div>
+
+</section>
+
+    <section class="resources">
+    <h2>Helpful Resources</h2>
+
+    <div class="resource-card">
+    <h3>Katie's Travel Tricks</h3>
+
+    <p>
+        Katie's Travel Tricks provides beginner-friendly information about
+        earning and using travel points. The website includes tips on credit
+        cards, airline miles, hotel points, and strategies for getting more
+        value from your rewards.
+    </p>
+
+    <a href="https://katiestraveltricks.com" target="_blank" rel="noopener">
+        Visit Katie's Travel Tricks
+    </a>
+</div>
+</section>
+</main>
+
+<footer>
+    <p>&copy;<span id="currentyear"></span> 🌸 Karissa Holt 🌸 Utah</p>
+    <p>
+        <a href="resources.html">References</a>
+    </p>
+    <p id="lastModified"></p>
+</footer>
+    
+</body>
+</html>

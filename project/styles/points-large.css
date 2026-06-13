@@ -1,0 +1,72 @@
+/* ---------- Larger Screens ---------- */
+
+@media screen and (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+
+    .branding img {
+        width: 95px;
+    }
+
+    .branding h1 {
+        font-size: 2rem;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+    }
+
+    .hero img {
+        height: 500px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .comparison-table div {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .calculator {
+    max-width: 700px;
+    margin: 3rem auto;
+    padding: 2rem;
+    }
+
+    #points-calculator {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #calculator-results {
+        max-width: 500px;
+        margin: 1.5rem auto 0;
+    }
+
+    footer {
+        padding: 1.5rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+
+    #lastModified {
+        font-size: 0.95rem;
+    }
+}
