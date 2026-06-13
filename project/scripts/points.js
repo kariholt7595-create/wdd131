@@ -51,17 +51,19 @@ function displayCalculatorResults(cashPrice, pointsNeeded, rating) {
     `;
 }
 
-calculatorForm.addEventListener("submit", function(event) {
-    event.preventDefault();
+if (calculatorForm) {
+    calculatorForm.addEventListener("submit", function(event) {
+        event.preventDefault();
 
-    const cashPrice = Number(document.getElementById("cash-price").value);
-    const pointsNeeded = Number(document.getElementById("points-needed").value);
+        const cashPrice = Number(document.getElementById("cash-price").value);
+        const pointsNeeded = Number(document.getElementById("points-needed").value);
 
-    const valuePerPoint = (cashPrice / pointsNeeded) * 100;
-    const rating = getRedemptionRating(valuePerPoint);
+        const valuePerPoint = (cashPrice / pointsNeeded) * 100;
+        const rating = getRedemptionRating(valuePerPoint);
 
-    displayCalculatorResults(cashPrice, pointsNeeded, rating);
+        displayCalculatorResults(cashPrice, pointsNeeded, rating);
 
-    localStorage.setItem("lastCashPrice", cashPrice);
-    localStorage.setItem("lastPointsNeeded", pointsNeeded);
-});
+        localStorage.setItem("lastCashPrice", cashPrice);
+        localStorage.setItem("lastPointsNeeded", pointsNeeded);
+    });
+}
